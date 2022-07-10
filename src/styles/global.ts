@@ -11,7 +11,6 @@ export default createGlobalStyle`
         font-size: 14px;
         font-family: sans-serif;
         transition: 0.5s background;
-        overflow: hidden;
     }
 
     .overview-title{
@@ -32,7 +31,7 @@ export default createGlobalStyle`
         position: relative  ;
         top: -100px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 60px;
     }
     .card-overview-container{
