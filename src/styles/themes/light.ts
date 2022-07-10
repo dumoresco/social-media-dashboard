@@ -10,5 +10,6 @@ export default {
     headerBg: "hsl(225, 100%, 98%)",
     subtitle: "hsl(228, 12%, 44%)",
     cardBg: "hsl(227, 47%, 96%)",
+    cardBgHover: "",
   },
 };

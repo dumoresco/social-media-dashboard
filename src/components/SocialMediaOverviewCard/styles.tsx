@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex: 1 1 220px;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 8px;
-  padding: 50px 10px;
+  padding: 30px 20px;
   position: relative;
   transition: 0.5s background-color;
   &:hover {
@@ -18,44 +17,23 @@ export const Container = styled.div`
   background-color: ${(props) => props.theme.colors.cardBg};
 
   .user-info {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
 
     span {
-      margin-left: 10px;
-      font-size: 13px;
-      color: ${(props) => props.theme.colors.subtitle};
-      font-weight: bold;
-    }
-  }
-
-  .info-statistics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .info-numbers {
-      font-size: 64px;
-      transition: 0.5s color;
-      color: ${(props) => props.theme.colors.text};
-      font-weight: bold;
-    }
-
-    .info-type {
       font-size: 15px;
       color: ${(props) => props.theme.colors.subtitle};
-      text-transform: uppercase;
-      opacity: 0.5;
-      letter-spacing: 5px;
+      font-weight: bold;
     }
   }
 
   .today-info-statistics {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     margin-top: 15px;
@@ -66,32 +44,29 @@ export const Container = styled.div`
     }
     font-weight: bold;
 
-    img {
-      margin-right: 10px;
+    .info-numbers {
+      font-size: 30px;
+      transition: 0.5s color;
+      color: ${(props) => props.theme.colors.text};
+      font-weight: bold;
+    }
+
+    .info-type {
+      font-size: 25px;
+      color: ${(props) => props.theme.colors.subtitle};
+      text-transform: uppercase;
+      opacity: 0.5;
+      letter-spacing: 5px;
+    }
+
+    .today-numbers {
+      margin-left: 5px;
     }
   }
-`;
 
-export const Border = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-
-  &.instagram {
-    background: linear-gradient(45deg, #fdc468, #df4996);
-  }
-
-  &.facebook {
-    background: hsl(208, 92%, 53%);
-  }
-
-  &.twitter {
-    background: hsl(203, 89%, 53%);
-  }
-  &.youtube {
-    background: hsl(348, 97%, 39%);
+  .percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;

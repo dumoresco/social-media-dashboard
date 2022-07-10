@@ -9,6 +9,7 @@ export default {
     toggle: "hsl(146, 68%, 55%)",
     headerBg: "hsl(232, 19%, 18%)",
     subtitle: "hsl(228, 34%, 66%)",
-    cardBg: "hsl(228, 28%, 20%)",
+    cardBg: "rgba(37,43,67,255)    ",
+    cardBgHover: "#333a56",
   },
 };

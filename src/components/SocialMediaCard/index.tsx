@@ -2,8 +2,6 @@ import React from "react";
 
 import { Container, Border } from "./styles";
 
-import { FaFacebookSquare } from "react-icons/fa";
-
 interface SocialMediaCardProps {
   iconName: string;
   username: string;

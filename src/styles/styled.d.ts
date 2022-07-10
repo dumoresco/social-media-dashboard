@@ -13,6 +13,7 @@ declare module "styled-components" {
       headerBg: string;
       subtitle: string;
       cardBg: string;
+      cardBgHover: string;
     };
   }
 }

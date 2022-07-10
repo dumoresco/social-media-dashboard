@@ -24,7 +24,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         </div>
         <Switch
           onChange={toggleTheme}
-          checked={title === "dark"}
+          checked={title === "light"}
           checkedIcon={false}
           uncheckedIcon={false}
           height={30}
@@ -32,7 +32,6 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
           handleDiameter={22}
           offColor={shade(0.15, colors.toggle)}
           onColor={colors.toggle}
-          spellCheck={true}
         />
       </div>
     </Container>
